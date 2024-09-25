@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: wordpress
+spec:
+  type: NodePort
+  ports:
+  - port: 80        # This is the service port
+    targetPort: 80  # Ensure this is the same as the container's listening port
+  selector:
+    app: wordpress
+
