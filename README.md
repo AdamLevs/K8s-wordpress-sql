@@ -97,7 +97,7 @@ kubectl get pods -n ingress-nginx
    Open your terminal and clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/K8s-wordpress-sql.git
+   git clone https://github.com/AdamLevs/K8s-wordpress-sql.git
    cd K8s-wordpress-sql
    ```
 
