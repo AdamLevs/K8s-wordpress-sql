@@ -8,5 +8,5 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: /mnt/data/mysql  # ודא שהנתיב הזה קיים במחשב שלך
+    path: /mnt/data/mysql 
 
