@@ -1,3 +1,4 @@
+{{- if .Values.wordpress.ingress.enabled }}
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -6,7 +7,7 @@ metadata:
     nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
 spec:
   rules:
-    - host: wordpress.adamlevs.com
+    - host: {{ .Values.wordpress.ingress.host }}
       http:
         paths:
           - path: /
@@ -15,5 +16,5 @@ spec:
               service:
                 name: wordpress
                 port:
-                  number: 80  # This should match the service port
-
+                  number: 80
+{{- end }}

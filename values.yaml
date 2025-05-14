@@ -1,0 +1,11 @@
+mysql:
+  rootPassword: password
+  storage: 1Gi
+
+wordpress:
+  replicaCount: 2
+  service:
+    type: NodePort
+  ingress:
+    enabled: true
+    host: wordpress.adamlevs.com
